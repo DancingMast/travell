@@ -1,0 +1,209 @@
+{% block content %}
+{% load static %} 
+<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+	<TITLE>TRS</TITLE>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<LINK rel="stylesheet" href="{% static 'csss/style.css' %}" />
+	<script type="text/javascript" src="{% static 'javas/javas.js' %}" name="tetetet">
+    </script>
+    
+    <style type="text/css">
+        .hmenu{
+            font-weight: bold;
+            font-size: 20pt;
+            width :100%;
+        }
+        .hmenu menu{
+            padding: 6px 0 7px 0;
+            margin: 0;
+        }
+        .hmenu li{
+            display: inline;
+        }
+        .hmenu li{
+            color: #494949;
+            padding: 6px 3px 4px 3px;
+            margin-right: 150px;
+            text-decoration: none;
+            /*border-bottom: 5px solid gray;*/
+        }
+        .hmenu li:hover{
+            border-bottom-color: black;
+            color: black;
+        }
+
+        caption{
+            caption-side: top;
+            color: darkred;
+            border:2px inset darkred;
+            border-radius: 20px;
+        }
+        td {
+            height: 1   cm;
+            border-radius: 50px;
+            border-right: 1px solid #C1DAD7;
+            border-bottom: 1px solid #C1DAD7;
+            background: darkcyan;
+            padding: 6px 6px 6px 12px;
+            color:black ;
+            text-align: left;
+            font-size:80 pt;
+        }
+        th{
+            background: darkcyan;
+            border-radius: 50px;
+            text-align: left;   
+            padding-left: 1cm; 
+        }
+        table{
+            width: 50%;
+            border: 2px inset darkred;
+            border-radius: 20px;
+            background : black;
+        }/*
+        #frame{
+			
+			position: absolute;
+            top: 80px;
+        
+            bottom: 50px;
+            right: 0;
+            width: 150px;
+            
+            overflow: auto;
+            background: black;
+           /
+            color: white;
+        }*/
+        
+		#mainthis{
+			position: fixed;
+			left:0px;
+			right:150px;
+			top:80px;
+			bottom: 50px;
+			overflow: auto;
+        }
+        
+                body{
+                    background-image: url("{% static 'photo/inback1.jpg' %}");
+                    background-size: cover;
+                    height: 100%;
+                   } 
+        
+
+
+    </style>
+
+</HEAD>
+<BODY >
+    <!--
+    <div id="frame" align:"right">
+        <h1 style="color: red">This is the left frame</h1>
+
+        
+  <DIV class="hmenu">
+        <MENU></MENU>
+        <BR><BR><BR><BR><BR>    
+            <a href="#top" >Profile</a>
+            <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+            <a href="#middle" >Favourites</a>
+            <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+            <a href="#bottom" >History</a>
+        </MENU></DIV>   
+    </div>
+-->
+
+<DIV id="topframe">
+	<H1 style="text-align:left; font-size: 30pt;font-family: Matura MT Script Capitals; color:white; top:0px">TraveLogy</H1></DIV>
+	<DIV align="right">
+			{% if user.is_authenticated %}
+			<a>Hello, {{user.first_name}}</a>
+			<a href="logout" >LOGOUT</a>
+			{% else %}
+			<a 	href="log/register" >LOGIN</a>
+			{% endif %}<a href="/homebut" style="position: right">HOME</a>
+	<a href="/dashbut" >DASHBOARD</a><a href="/abobut" >ABOUT</a>
+	</DIV>		
+          
+    <DIV id="main" align="center">
+        
+            <Br><BR><BR>
+<div id="top"><a href="top"></a>
+<table>
+    <caption><h3> User Profile</h3></caption>
+    <TR>
+        <td><h3>Name</h3></td>
+        <td>{{name}}</td> 
+    </TR>
+    <!-- <TR> -->
+            <!-- <td><h3>Last Name</h3></td> -->
+            <!-- <td>Shendage</td>  -->
+    <!-- </TR> -->
+    <TR>
+            <td><h3>UserID</h3></td>
+            <td>{{userid}}</td> 
+    </TR>
+    
+    <TR>
+            <td><h3>E-mail</h3></td>
+            <td>{{email}}</td> 
+    </TR>
+    <TR>
+            <td><h3>Date Joined</h3></td>
+            <td>{{datejoined}}</td> 
+    </TR>
+    <TR>
+            <td><h3>Last Login</h3></td>
+            <td>{{lastlogin}}</td> 
+    </TR>
+</table>    
+</div>
+<Br><BR><BR><Br><BR><BR>
+<div id="middle">
+<table>
+        <caption><h3> Past Favourites</h3></caption>
+        <TR>
+            <th><h3>Destination</h3></th>
+            <th><h3>Town</h3></th>
+        </TR>
+        
+        {%for ab in Dests %}
+            <TR><TD>{{ab.0}} </TD>
+             <TD>{{ab.1}}</TD></TR>
+            {%endfor%}
+
+    
+</table>    
+</div>
+<Br><BR><BR><Br><BR><BR>
+    <!--
+<div id="bottom">  
+<table>
+        <caption><h3>History</h3></caption>
+        <TR>
+            <th><h3>Category</h3></th>
+            <th><h3>Month</h3></th>
+        </TR>
+        <TR>
+                <td>Saurabh Sheth</h3></td>
+                <td>Zaal ka?</td> 
+        </TR>
+</table>    
+</div> -->
+
+
+        </DIV>
+	<!-- <DIV id="bottomframe"><P align="center"> Tourism Recommendation System</P></DIV> -->
+</BODY>
+
+</HTML>
+	
+
+{% endblock %}
+	

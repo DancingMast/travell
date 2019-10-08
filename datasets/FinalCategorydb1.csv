@@ -1,0 +1,185 @@
+DISTRICT,TOWN,DESTINATION,Category,Favourite
+AHMEDNAGAR,Shirdi (M Cl),Shirdi,Religious & Spiritual,1
+AHMEDNAGAR,Shirdi (M Cl),Shanisignapur,Religious & Spiritual,0
+AHMEDNAGAR,Srigonda,Siddhivinayak - Siddhatek (Astvinayak),Religious & Spiritual,0
+AHMEDNAGAR,Ahmadnagar (M Cl),Ahmednagar fort,Forts,0
+AHMEDNAGAR,Ahmadnagar (M Cl),Newasa,Religious & Spiritual,0
+AHMEDNAGAR,Ahmadnagar (M Cl),"Kalasubai Harischandragad Wild Life
+Sanctury",Forests & Wildlife,0
+AHMEDNAGAR,Ahmadnagar (M Cl),Bhandardara (Dam),Lake & Water bodies,1
+AHMEDNAGAR,Ahmadnagar (M Cl),Ravekudi,Religious & Spiritual,0
+AKOLA,Akot (M Cl),Narnala wildlife sanctuary,Forests & Wildlife,0
+AKOLA,Akot (M Cl), Narnala Fort,Forts,0
+AKOLA,Balapur,Balapur Fort,Forts,0
+AMRAVATI,"Chikhaldara (Hill
+Station)","Melghat Tiger Project
+",Forests & Wildlife,0
+AMRAVATI,"Chikhaldara (Hill
+Station)",Gugamal National park,Forests & Wildlife,0
+AMRAVATI,Morshi (M Cl)-,Salbardi    (Chakradher Swami Mandir),Religious & Spiritual,0
+AMRAVATI,Amravati (M Corp.),Ambadevi Temple,Religious & Spiritual,0
+AMRAVATI,Amravati (M Corp.), Ekvira Temple,Religious & Spiritual,0
+AURANGABAD,Aurangabad (CB),Ajanta,Caves,1
+AURANGABAD,Aurangabad (CB),Daultabad Fort,Forts,0
+AURANGABAD,Aurangabad (CB),Ellora,Caves,1
+AURANGABAD,Aurangabad (CB),Bibi Ka Makbara,Heritage Site,0
+AURANGABAD,Aurangabad (CB),Grishneshwer (Jyotirling),Religious & Spiritual,0
+AURANGABAD,Aurangabad (CB),Shri Bhadra Maruti Temple,Religious & Spiritual,0
+AURANGABAD,Paithan (M Cl),Paithan - Jayakwadi ( Paithani Sari ),Heritage Site,0
+BEED,Bid (M Cl),Kapildhara (Ashram Of Kapilmuni),Religious & Spiritual,0
+BEED,Bid (M Cl),Parali Vaishnath,Religious & Spiritual,0
+BHANDARA,Tumsar (M Cl),Ambagar Fort,Forts,0
+BHANDARA,Sakoli,Chinchgad,Lake & Water bodies,0
+BHANDARA,Bhandara (M Cl),Dighod,Heritage Site,0
+BHANDARA,Bhandara (M Cl),Brahmi,Heritage Site,0
+BULDHANA,Shegaon (M Cl),Sheogaon (Samadhi of Gajanan Maharaj),Religious & Spiritual,0
+BULDHANA,Lonar (M Cl),Datyasudan Temple,Religious & Spiritual,0
+BULDHANA,Lonar (M Cl),Lonar Crater,Lake & Water bodies,0
+CHANDRAPUR,Brahmapuri (M Cl),Nagbhir (Ghodajhari) Picnic Spot,Hill-Station,0
+CHANDRAPUR,Chandrapur (M Cl),Tadoba national park,Forests & Wildlife,0
+CHANDRAPUR,Chandrapur (M Cl),Tadoba lake,Lake & Water bodies,0
+DHULE,"Shirpur-Warwade (M
+Cl)",Anerdam Wildlife Sanctury,Forests & Wildlife,0
+GADCHIROLI,Gadchiroli (M Cl),"Jinganur       (Bhamergargh Wildlife
+Sanctury)",Forests & Wildlife,0
+GONDIA,Gondia (M Cl),Nayagaon Wild Life  Sanctury,Forests & Wildlife,0
+HINGOLI,Hingoli (M Cl),Aundha Nagnath ( Jyotirling),Religious & Spiritual,0
+HINGOLI,Hingoli (M Cl),Narsi Namdev,Religious & Spiritual,0
+HINGOLI,Basmath (M Cl),"Mallinath Digambar Jain ( audhanagnath)
+35km",Religious & Spiritual,0
+JALGAON,Chopda (M Cl),Unapdev hot Spring mouth,Lake & Water bodies,0
+JALGAON,Chopda (M Cl),Adavad,Hill-Station,0
+JALGAON,Muktainager,Bhusawal,Heritage Site,0
+JALGAON,Muktainager,Changdev Maharaj,Religious & Spiritual,0
+JALGAON,Amalner (M Cl),Amalner Tirath,Religious & Spiritual,0
+JALGAON,Amalner (M Cl),"
+Amalner Fort",Forts,0
+JALGAON,Chalisgaon(M Cl),Patanadevi Temple,Religious & Spiritual,0
+JALNA,Jalna (M Cl),Shree Ganesh of Rajur,Religious & Spiritual,0
+JALNA,Jalna (M Cl),The Matsyodari Devi Temple,Religious & Spiritual,0
+JALNA,Jalna (M Cl),Moti bagh,Lake & Water bodies,0
+JALNA,Jalna (M Cl),Jamb Samartha,Religious & Spiritual,0
+KOLHAPUR,Radhanagari,Radhanagri Dam,Lake & Water bodies,0
+KOLHAPUR,Radhanagari,Radhanagri (Dazipur Wild Life Santuary),Forests & Wildlife,0
+KOLHAPUR,Malkapur (M Cl),Vishalgad Fort,Forts,0
+KOLHAPUR,Panhala (M Cl),Panhala fort,Forts,0
+KOLHAPUR,Kolhapur (M Corp.),Rankala lake,Lake & Water bodies,0
+KOLHAPUR,Kolhapur (M Corp.),Mahalaxmi Temple,Religious & Spiritual,0
+KOLHAPUR,Kolhapur (M Corp.),Maharaja palace,Heritage Site,0
+KOLHAPUR,Kolhapur (M Corp.),Shalini Palace,Heritage Site,0
+KOLHAPUR,Kolhapur (M Corp.),Mandre Museum,Museum,0
+LATUR,Latur (M Cl),City park,Heritage Site,0
+MUMBAI,Mumbai,Gateway of India,Heritage Site,0
+MUMBAI,Mumbai,Prince of wales museum,Museum,0
+MUMBAI,Mumbai,Jahangir art gallery,Museum,0
+MUMBAI,Mumbai,Marine Drive,Beaches,0
+MUMBAI,Mumbai,Hanging Garden,Heritage Site,0
+MUMBAI,Mumbai,Mahalaxmi temple,Religious & Spiritual,0
+MUMBAI,Mumbai,Haji Ali,Religious & Spiritual,0
+MUMBAI,Mumbai,Juhu Beach,Beaches,0
+MUMBAI,Mumbai,Sidhivinayak,Religious & Spiritual,0
+MUMBAI,Mumbai,Malabar hill,Hill-Station,0
+MUMBAI,Mumbai,Elephanta caves,Caves,0
+MUMBAI,Mumbai,Nehru Planetarium,Museum,0
+MUMBAI,Mumbai,Sanjay Gandhi National park ,Forests & Wildlife,0
+MUMBAI,Mumbai,Kanheri Caves ,Caves,0
+NAGPUR,Mauda,Kanhan,Lake & Water bodies,0
+NAGPUR,Totaladoh (CT),Pench National park,Forests & Wildlife,0
+NAGPUR,Ramtek (M Cl),Ramtek  ( Shri Ram Temple ),Religious & Spiritual,0
+NAGPUR,Nagpur (M Corp.),Ambazari Lake,Lake & Water bodies,0
+NAGPUR,Nagpur (M Corp.),Balaji Temple,Religious & Spiritual,0
+NAGPUR,Nagpur (M Corp.),Maharaj Baug-zoo,Forests & Wildlife,0
+NANDURBAR,Taloda (M Cl),Toranmal,Hill-Station,0
+NANDURBAR,Taloda (M Cl),Toranmal shiv temple,Religious & Spiritual,0
+NANDURBAR,Taloda (M Cl),"
+Hidimba's forest",Forests & Wildlife,0
+NANDURBAR,Taloda (M Cl),Sardar Sarovar Project - kevadia dam,Lake & Water bodies,0
+NANDURBAR,Taloda (M Cl),Fort of Akka Rani,Forts,0
+NANDURBAR,Shahade (M Cl),Historical Well Of Tawalai,Heritage Site,0
+NANDURBAR,Nandurbar (M Cl),Sideshwar Temple,Religious & Spiritual,0
+NASIK,Nashik (M Corp.),Trimbakeshwar (Jyotirling),Religious & Spiritual,0
+NASIK,Nashik (M Corp.),Pandav caves,Caves,0
+NASIK,Nashik (M Corp.),"Sinhastha Kumbh
+Mela(Punchvati-godavari Ghat)",Religious & Spiritual,0
+NASIK,Igatpuri (M Cl),Igatpuri,Hill-Station,0
+NANDED,Kinwat (M Cl),Sahastra kund,Lake & Water bodies,0
+NANDED,Kinwat (M Cl),Painganga wildlife,Forests & Wildlife,0
+NANDED,Kinwat (M Cl),Mahurgad,Forts,0
+NANDED,"Nanded-Waghala (M
+Corp.)",Nanded Fort Sachkant Gurudwara,Religious & Spiritual,0
+OSMANABAD,Osmanabad (M Cl),Ramlingam ghat,Hill-Station,0
+OSMANABAD,Osmanabad (M Cl),Dharashiv Caves Balaghat Mountains,Caves,0
+OSMANABAD,Osmanabad (M Cl),Tulja Devi,Religious & Spiritual,0
+PARBHANI,Parbhani (M Cl),Hajarat Turabul Huq,Religious & Spiritual,0
+PARBHANI,Pathri (M Cl), Shirdi Saibaba Janmshtan Mandir,Religious & Spiritual,0
+PARBHANI,Pathri (M Cl),Pathri,Religious & Spiritual,0
+PUNE,Junnar (M Cl),Shivneri Fort,Forts,0
+PUNE,Rajgurunagar (Khed),Bhimashanker ,Forests & Wildlife,0
+PUNE,Alandi (M Cl),Aland  (Samadhi of Sant Dnyaneshwar),Religious & Spiritual,0
+PUNE,Lonavala (M Cl),Lonavala,Hill-Station,0
+PUNE,Lonavala (M Cl),Khandala,Hill-Station,0
+PUNE,Lonavala (M Cl),Lohagad,Forts,0
+PUNE,Lonavala (M Cl),Karla Caves,Caves,0
+PUNE,Dehu (CT),Dehu (  Mahasamadhi Of Sant Tukaram ),Religious & Spiritual,0
+PUNE,Pune (CB)/ m.corp),Kelkar Museum,Museum,0
+PUNE,Pune (CB)/ m.corp),Sinhgad Fort,Forts,0
+PUNE,Pune (CB)/ m.corp),Ranjangaon (Ashtvinayak),Religious & Spiritual,0
+PUNE,Pune (CB)/ m.corp),"Shaniwar wada,",Heritage Site,0
+PUNE,Pune (CB)/ m.corp),Khadakwasala,Lake & Water bodies,0
+PUNE,"Pune (CB)/ m.corp)
+12 km",Panchet Dam,Lake & Water bodies,0
+PUNE,Pune (CB)/ m.corp),Agha Khan Place,Heritage Site,0
+PUNE,Pune (CB)/ m.corp),Chattri ( Architecture/Memorial ),Heritage Site,0
+PUNE,Pune (CB)/ m.corp),Katraj Garden,Forests & Wildlife,0
+PUNE,Pune (CB)/ m.corp),Parvati (hill and Temple Oldest heritage),Heritage Site,0
+PUNE,Pune (CB)/ m.corp),Pataleshwar Caves,Caves,0
+PUNE,Pune (CB)/ m.corp),Moregaon (Ashtvinayak),Religious & Spiritual,0
+PUNE,Pune (CB)/ m.corp),Rajgarh Fort,Forts,0
+PUNE,"Pune (CB)/ m.corp)
+50 km",Torna Fort,Forts,0
+PUNE,Pune (CB)/ m.corp),Theur(ashtvinayak),Religious & Spiritual,0
+PUNE,Pune (CB)/ m.corp),Khurundar Fort,Forts,0
+PUNE,Jejuri (M Cl),Jejuri (khandoba or Khandobachi Temple),Religious & Spiritual,0
+RAIGHAD,Matheran (M Cl),Matheran,Hill-Station,1
+RAIGHAD,Alibag (M Cl),Alibag Fort,Forts,0
+RAIGHAD,Alibag (M Cl),Alibag Beach,Beaches,0
+RAIGHAD,Alibag (M Cl),Mandva beach,Beaches,0
+RAIGHAD,Murud (M Cl),Murud-Janjira,Forts,0
+RAIGHAD,Murud (M Cl),Phansad wildlife sanctury,Forests & Wildlife,0
+RAIGHAD,Shrivardhan (M Cl),Harihareshwer,Religious & Spiritual,0
+RAIGHAD,Mahad (M Cl),Mahad (Ashtavinayak),Lake & Water bodies,0
+RATNAGIRI,Dapoli Camp (CT),Harnai Beach,Beaches,0
+RATNAGIRI,Ratnagiri (M Cl),Ganpatipule,Beaches,0
+RATNAGIRI,Ratnagiri (M Cl),Ganpatipule,Religious & Spiritual,0
+RATNAGIRI,Rajapur (M Cl),Ganga / Hot Water Spring,Lake & Water bodies,0
+SANGLI,Manadur (CT),Chandoli Wildlife Sanctuary,Forests & Wildlife,0
+SANGLI,Vita (M Cl),Sagareshwar Wildlife Sanctuary,Forests & Wildlife,0
+SATARA,Mahabaleshwar (M,Mahabale/prapgarh fort,Forts,0
+SATARA,Panchgani (M Cl),Panchgani,Hill-Station,0
+SATARA,Satara (M Cl),Shri Bhavani Museum,Museum,0
+SATARA,Satara (M Cl),Thosegarh water fall,Lake & Water bodies,0
+SATARA,Satara (M Cl),Kas lake,Lake & Water bodies,0
+SATARA,Satara (M Cl),Ajinkyatra fort,Forts,0
+SATARA,Satara (M Cl),Sajangarh,Forts,0
+SATARA,Patan (CT),Koyna lake,Lake & Water bodies,0
+SINDHUDURG,Malwan (M Cl),Malvan Fort,Forts,0
+SINDHUDURG,Malwan (M Cl),Malvan beach,Beaches,0
+SINDHUDURG,Malwan (M Cl),Tarkarli,Beaches,0
+SINDHUDURG,Malwan (M Cl),Vijaydurg fort,Forts,0
+SINDHUDURG,Sawantwadi (M Cl),Amboli Waterfalls,Lake & Water bodies,0
+SOLAPUR,Solapur (M Corp.),Akalkote,Religious & Spiritual,0
+SOLAPUR,Solapur (M Corp.),Kundalsanga,Religious & Spiritual,0
+SOLAPUR,Pandharpur (M Cl),Pandharpur,Religious & Spiritual,0
+SOLAPUR,Mangalvedhe (M Cl),Mangalwedha,Heritage Site,0
+THANE,Palghar (M Cl),Kelve Beach,Beaches,0
+THANE,Palghar (M Cl),Kelve Fort,Forts,0
+THANE,Palghar (M Cl),Kelve Dam,Lake & Water bodies,0
+THANE,Vasai (M Cl),Ganeshpuri(swaminityanand Maharaj),Religious & Spiritual,0
+THANE,Vasai (M Cl),Purtgali Fort,Forts,0
+THANE,Ambarnath(M Cl),"AMBARNATH Shiv Temple & Ganesh
+Temple in Titwala",Religious & Spiritual,0
+WARDHA,Wardha (M Cl),SEVAGRAM,Heritage Site,0
+WASHIM,Washim (M Cl),Shirpur ( Parshwanath Digamber Jain Mandir),Religious & Spiritual,0
+WASHIM,Washim (M Cl),Padmateerth,Religious & Spiritual,0
+YAVATMAL,Yavatmal (M Cl),Kalamb Tipeshwar Sanctury,Forests & Wildlife,0
+YAVATMAL,Ghatanji (M Cl),Ghatanji & Kaleshwar,Religious & Spiritual,0

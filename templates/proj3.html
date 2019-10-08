@@ -1,0 +1,89 @@
+{% block content %}
+{% load static %} 
+<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+	<TITLE>TRS</TITLE>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<LINK rel="stylesheet" href="{% static 'csss/style.css' %}" />
+	<script src="{% static 'javas/javas.js' %}" name="num1"></script>
+	<style>
+		.asach{
+			position: fixed;
+			
+			left:0px;
+			top:0px;
+			background:white;
+			max-width: 700px;
+		}
+		.asach2{
+			position: fixed;
+			height: 80px;
+			right:0px;
+			top:0px;
+			background:white;
+		}
+		body{
+				background-image: url("{% static 'photo/inback1.jpg' %}");
+				background-size: cover;
+				height: 100%;
+		   } 
+	</style>
+</HEAD>
+<BODY background="{% static 'photo/b3.png' %}"> 
+	<DIV id="topframe">
+		<H1 style="text-align:left; font-size: 30pt;font-family: Matura MT Script Capitals; color:white; top:0px">TraveLogy</H1></DIV>
+		<DIV align="right">
+				{% if user.is_authenticated %}
+				<a>Hello, {{user.first_name}}</a>
+				<a href="log/logout" >LOGOUT</a>
+				{% else %}
+				<a 	href="log/register" >LOGIN</a>
+				{% endif %}<a href="/homebut" style="position: right">HOME</a>
+		<a href="/dashbut" >DASHBOARD</a><a href="/abobut" >ABOUT</a>
+		</DIV>
+	
+	<DIV id="main" align="center" style="background: darkcyan">
+	<TABLE align="center"><FORM action="cat3"> 
+		 <!-- method="POST"> -->
+		  {% csrf_token%} 
+		
+		<TR>
+			<!-- <div class="container"> -->
+			<TD><button name="cat" type="submit" value="sector" >
+				<DIV id="transform">
+				<IMG src="{% static 'photo/piesec.jpg' %}">
+				<div class="centered" ><h3>Sectorwise Income</h3></div>
+				</IMG>
+				<!-- </label> -->
+				
+    			<!-- <input id="rel" onclick="myFunction('C5')" type="submit"  formaction="cat1" value="" /> -->
+				</DIV>
+				</button>
+			</TD></FORM>
+			<FORM action="cat4">
+			<TD><button name="cat" type="submit" value="predict" >
+				<DIV id="transform">
+				<IMG src="{% static 'photo/sector.jpg' %}">
+				<div class="centered" ><h3>Prediction Of Visitors</h3></div>
+				</IMG>
+				<!-- </label> -->
+				
+    			<!-- <input id="rel" onclick="myFunction('C5')" type="submit"  formaction="cat1" value="" /> -->
+				</DIV>
+				</button>
+			</TD></FORM>
+		</TR>
+	</TABLE></DIV>
+
+	<!-- <DIV id="bottomframe"><P align="center"> Tourism Recommendation System</P></DIV> -->
+</BODY>
+
+</HTML>
+	
+
+{% endblock %}
+	

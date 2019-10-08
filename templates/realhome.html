@@ -1,0 +1,63 @@
+{% block content %}
+{% load static %} 
+<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+	<TITLE>TRS</TITLE>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<LINK rel="stylesheet" href="{% static 'csss/style.css' %}" />
+	<script src="{% static 'javas/javas.js' %}" name="num1"></script>
+	<style>
+        body{
+            background-image: url("{% static 'photo/backwall.jpg' %}");
+            background-size: cover;
+			height: 100%;
+			/*background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            bottom: 0cm;*/
+        }
+	</style>
+</HEAD>
+<BODY > 
+	<DIV id="topframe" style="background: transparent; ">
+	<!-- <H1 style="text-align:left; font: size 35pt; color: white">Tourism Recommendation System</H1> -->
+</DIV>
+	<DIV align="right">
+	{% if user.is_authenticated %}
+	<a style="text-transform: none"  href="log/showpof">Hello, {{user.first_name}}</a>
+	<a href="log/logout" >LOGOUT</a>
+	{% else %}
+	<a 	href="log/register" >LOGIN</a>
+	{% endif %}
+	<a href="/homebut" style="position: right">HOME</a>
+	<a href="/dashbut" >DASHBOARD</a><a href="/abobut" >ABOUT</a>
+	</DIV>
+	
+	<!-- <DIV id="main" align="center" style="">  -->
+			<DIV align="center" style=""> 
+				<BR><BR><BR>
+				<img src="{% static 'photo/withoutBG.png' %}" style="height: 5.5cm; "></img>
+        <FORM action="getstart">
+		<h1 style="font-family: Matura MT Script Capitals; font-size:70pt;;color: white">TraveLogy</h1>
+		<h1 style="font-family:Copperplate Gothic; font-size:30pt;color: white">Not all who wander are lost!</h1>
+			<BUTTON type="Submit" style="border:5px groove; border-radius:0.8cm ;background: rgb(5, 75, 107); opacity:0.6	; ;width:5cm; height:2.5cm; ">
+				<h2 style="font-size:19pt; color: white;">Get Started!</h2></BUTTON>
+			</FORM>
+			<FORM action="log/popacross">
+			<BUTTON type="Submit" style="border:5px groove; border-radius:0.8cm ;background: rgb(5, 75, 107); opacity:0.6	; ;width:5cm; height:2.5cm; ">
+				<h2 style="font-size:19pt; color: white;">Popular Across!</h2></BUTTON>
+            </FORM>  
+		</DIV>
+
+	<!-- <DIV id="bottomframe"><P align="center"> Tourism Recommendation System</P></DIV> -->
+</BODY>
+
+</HTML>
+	
+
+{% endblock %}
+	

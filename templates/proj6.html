@@ -1,0 +1,118 @@
+{% block content %}
+{% load static %} 
+<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+	<TITLE>TRS</TITLE>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<LINK rel="stylesheet" href="{% static 'csss/style.css' %}" />
+	<script type="text/javascript" src="{% static 'javas/javas.js' %}" name="tetetet">
+	</script>
+</HEAD>
+<style>
+		body{
+            background-image: url("{% static 'photo/inback1.jpg' %}");
+            background-size: cover;
+			height: 100%;
+		   } 
+	</style>
+<BODY> 
+    <DIV id="topframe">
+		<H1 style="text-align:left; font-size: 30pt;font-family: Matura MT Script Capitals; color:white; top:0px">TraveLogy</H1></DIV>
+		<DIV align="right">
+				{% if user.is_authenticated %}
+				<a>Hello, {{user.first_name}}</a>
+				<a href="log/logout" >LOGOUT</a>
+				{% else %}
+				<a 	href="log/register" >LOGIN</a>
+				{% endif %}<a href="/homebut" style="position: right">HOME</a>
+		<a href="/dashbut" >DASHBOARD</a><a href="/abobut" >ABOUT</a>
+        </DIV>
+          
+    <DIV id="main" align="center">
+            <H2 style="text-align:center; ">Visitors Prediction</H2>
+        <BR><BR><FORM action="cat5">
+        <select name="dist" class="select-css" >
+                <OPTION>Select District</OPTION>
+                <OPTION value="AHMEDNAGAR">AHMEDNAGAR</OPTION>
+                <OPTION value="AKOLA">AKOLA</OPTION>
+                <OPTION value="AMRAVATI">AMRAVATI</OPTION>
+                <OPTION value="AURANGABAD">AURANGABAD</OPTION>
+                <OPTION value="BEED">BEED</OPTION>
+                <OPTION value="BHANDARA">BHANDARA</OPTION>
+                <OPTION value="BULDHANA">BULDHANA</OPTION>
+                <OPTION value="CHANDRAPUR">CHANDRAPUR</OPTION>
+                <OPTION value="DHULE">DHULE</OPTION>
+                <OPTION value="GADCHIROLI">GADCHIROLI</OPTION>
+                <OPTION value="GONDIA">GONDIA</OPTION>
+                <OPTION value="HINGOLI">HINGOLI</OPTION>
+                <OPTION value="JALGAON">JALGAON</OPTION>
+                <OPTION value="JALNA">JALNA</OPTION>
+                <OPTION value="KOLHAPUR">KOLHAPUR</OPTION>
+                <OPTION value="LATUR">LATUR</OPTION>
+                <OPTION value="MUMBAI">MUMBAI</OPTION>
+                <OPTION value="NAGPUR">NAGPUR</OPTION>
+                <OPTION value="NANDURBAR">NANDURBAR</OPTION>
+                <OPTION value="NASIK">NASIK</OPTION>
+                <OPTION value="NANDED">NANDED</OPTION>
+                <OPTION value="OSMANABAD">OSMANABAD</OPTION>
+                <OPTION value="PARBHANI">PARBHANI</OPTION>
+                <OPTION value="PUNE">PUNE</OPTION>
+                <OPTION value="RAIGHAD">RAIGHAD</OPTION>
+                <OPTION value="RATNAGIRI">RATNAGIRI</OPTION>
+                <OPTION value="SANGLI">SANGLI</OPTION>
+                <OPTION value="SATARA">SATARA</OPTION>
+                <OPTION value="SINDHUDURG">SINDHUDURG</OPTION>
+                <OPTION value="SOLAPUR">SOLAPUR</OPTION>
+                <OPTION value="THANE">THANE</OPTION>
+                <OPTION value="WARDHA">WARDHA</OPTION>
+                <OPTION value="WASHIM">WASHIM</OPTION>
+                <OPTION value="YAVATMAL">YAVATMAL</OPTION>
+            </select><BR>
+            <select class="select-css" name="mon">
+                    <OPTION >Select Month</OPTION>
+                    <OPTION value="1">January</OPTION>
+                    <OPTION value="2">February</OPTION>
+                    <OPTION value="3">March</OPTION>
+                    <OPTION value="4">April</OPTION>
+                    <OPTION value="5">May</OPTION>
+                    <OPTION value="6">June</OPTION>
+                    <OPTION value="7">July</OPTION>
+                    <OPTION value="8">August</OPTION>
+                    <OPTION value="9">September</OPTION>
+                    <OPTION value="10">October</OPTION>
+                    <OPTION value="11">November</OPTION>
+                    <OPTION value="12">December</OPTION>        
+            </SELECT><BR>
+            <select class="select-css" name="year">
+                    <OPTION >Select Year</OPTION>
+                    <OPTION value="2013">2013</OPTION>
+                    <OPTION value="2014">2014</OPTION>
+                    <OPTION value="2015">2015</OPTION>
+                    <OPTION value="2016">2016</OPTION>
+                    <OPTION value="2017">2017</OPTION>
+                    <OPTION value="2018">2018</OPTION>
+                    <OPTION value="2019">2019</OPTION>
+                    <OPTION value="2020">2020</OPTION>
+                   <!-- <OPTION value="2021">2021</OPTION>
+                    <OPTION value="2022">2022</OPTION>
+                    <OPTION value="2023">2023</OPTION>
+                    <OPTION value="2024">2024</OPTION>        -->
+                </SELECT><BR>
+                    <BUTTON type="Submit" style="border:4px groove; border-radius:1cm ;background:	#AFEEEE ;width:4cm; height:2cm"><h2 style="font-size:19pt;">Predict!</h2></BUTTON>
+                    <BR>    
+                    <!-- <BUTTON type="Reset" style="border:7px groove;background:lightyellow ;">Reset</BUTTON>
+                     -->
+    
+                    </FORM>          </DIV>
+	<!-- <DIV id="bottomframe"><P align="center"> Tourism Recommendation System</P></DIV> -->
+</BODY>
+
+</HTML>
+	
+
+{% endblock %}
+	

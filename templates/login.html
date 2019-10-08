@@ -1,0 +1,127 @@
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login/Registration Form Transition</title>
+  <LINK rel="stylesheet" href="{% static 'csss/style.css' %}" />
+	<script src="{% static 'javas/javas.js' %}" name="num1"></script>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="../static/csss/log.css">
+</head>
+
+<style>
+		body{
+            background-image: url("{% static 'photo/inback1.jpg' %}");
+            background-size: cover;
+			height: 100%;
+		   } 
+	</style>
+
+<body>
+        <DIV id="topframe">
+                <H1 style="text-align:left; font: size 35pt; ">Tourism Recommendation System</H1></DIV>
+            
+<!-- partial:index.partial.html -->
+<DIV align="right">
+        <a href="/homebut" style="position: right">HOME</a><a href="/dashbut" >DASHBOARD</a><a href="/abobut" >ABOUT</a>
+        </DIV>
+ 
+
+  <DIV id="main" align="center" style="background:transparent;">
+    <BR><BR>
+  <div class="cont">
+  <div class="form sign-in">
+    <h2>Welcome back,</h2>  
+    <BR><BR><BR>
+
+    <form action="login"> 
+    <label>
+      <span style="color:  #9F4890">User Id</span>
+      <input type="text " name="userid"/>
+    </label>
+    <label>
+      <span style="color:  #9F4890">Password</span>
+      <input type="password" name="password"/>
+    </label>
+  
+
+    <!-- <p class="forgot-pass">Forgot password?</p> -->
+    <button type="submit" class="submit">Sign In</button>
+  </form>
+  {% for message in messages %}
+      <h3> {{ message }}  </h3>
+      {% endfor %}
+
+    <!-- <button type="button" class="fb-btn">Connect with <span>facebook</span></button> -->
+  </div>
+  <div class="sub-cont">
+    <div class="img">
+      <div class="img__text m--up">
+        <h2>New here?</h2>
+        <p>Sign up and discover great amount of new opportunities!<BR><BR><BR><BR><BR><BR><BR><BR></p>
+      </div>
+      <div class="img__text m--in">
+        <h2>One of us?</h2>
+        <p>If you already has an account, just sign in. We've missed you!   </p>
+      </div>
+      <div class="img__btn">
+        <span class="m--up" >Sign Up</span>
+        <span class="m--in" >Sign In</span>
+      </div>
+    </div>
+    <div class="form sign-up" >
+
+    <form action="signup" method="POST">
+      {% csrf_token %}
+      <h2>Time to feel like home,</h2>
+      <label>
+        <span style="color:  #9F4890">Name</span>
+        <input type="text" name="name"/>
+      </label>
+
+      <label>
+        <span style="color:  #9F4890">User Id</span>
+        <input type="text" name="userid"/>
+      </label>
+    
+      <label>
+        <span style="color:  #9F4890">Email</span>
+        <input type="email"  name="e-mail"/>
+      </label>
+      <label>
+        <span style="color:  #9F4890">Password</span>
+        <input type="password" name="password" />
+      </label>
+     
+      <button type="submit" class="submit">Sign Up</button>  
+    </form>  
+    
+    
+    </div>
+  </div>
+</div>
+
+</DIV>
+
+
+<!-- <DIV id="bottomframe"><P align="center"> Tourism Recommendation System</P></DIV> -->
+</BODY>
+<!--
+<a href="https://dribbble.com/shots/3306190-Login-Registration-form" target="_blank" class="icon-link">
+  <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
+</a>
+<a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
+  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+</a>-->
+<!-- partial -->
+  <script  src="../static/javas/log.js"></script>
+
+</body>
+</html> 
+
+
+{% endblock %}
+	

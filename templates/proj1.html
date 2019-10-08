@@ -1,0 +1,178 @@
+{% block content %}
+{% load static %} 
+<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+	<TITLE>TRS</TITLE>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<LINK rel="stylesheet" href="{% static 'csss/style.css' %}" />
+	<script src="{% static 'javas/javas.js' %}" name="num1"></script>
+
+	<style>
+		body{
+            background-image: url("{% static 'photo/inback1.jpg' %}");
+            background-size: cover;
+			height: 100%;
+		   } 
+	</style>
+
+</HEAD>
+<BODY> 
+	<DIV id="topframe">
+		<H1 style="text-align:left; font-size: 30pt;font-family: Matura MT Script Capitals; color:white; top:0px">TraveLogy</H1></DIV>
+		<DIV align="right">
+				{% if user.is_authenticated %}
+				<a>Hello, {{user.first_name}}</a>
+				<a href="log/logout" >LOGOUT</a>
+				{% else %}
+				<a 	href="log/register" >LOGIN</a>
+				{% endif %}<a href="/homebut" style="position: right">HOME</a>
+		<a href="/dashbut" >DASHBOARD</a><a href="/abobut" >ABOUT</a>
+		</DIV>			
+			
+	<DIV id="main" align="center" style="background: transperant ">
+	<TABLE align="center"><FORM action="cat2"> 
+		 <!-- method="POST"> -->
+		  {% csrf_token%} 
+		
+		
+		<TR>
+		<TD><button name="cat" type="submit" value="June" >
+			<DIV id="transform">
+			<!-- <label for="file-input"> -->
+			<IMG src="{%static 'months/jun.png' %}">
+			<div class="centered" ><h3>June</h3></div>
+    		<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+			</IMG>
+			<!-- </label> -->
+    		<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /></DIV> -->
+		</TD></button>
+		<TD title="Lets go through the heritage sites across Maharashtra!">
+			<button name="cat" type="submit" value="July" >
+			<!-- <label for="file-input"> -->
+			<DIV id="transform">
+			<IMG src="{% static 'months/july.png' %}">
+			<div class="centered" ><h3>July</h3></div>
+			</IMG>
+			<!-- </label> -->
+	    	<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+	    	</DIV>
+		</TD></button>
+		<TD><button name="cat" type="submit" value="August" >
+			<!-- <label for="file-input"> -->
+			<DIV id="transform">
+			<IMG src="{% static 'months/aug.jpg' %}">
+			<div class="centered" ><h3>August</h3></div>
+			</IMG>
+			<!-- </label> -->
+    		<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+    		</DIV>
+		</TD></button>
+		<TD><button name="cat" type="submit" value="Sep" >
+			<!-- <label for="file-input"> -->
+			<DIV id="transform">
+			<IMG src="{% static 'months/sep.jpg' %}">	
+			<div class="centered" ><h3>September</h3></div>
+			</IMG>
+			<!-- </label> -->
+    		<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+    		</DIV>
+		</TD></button>
+        </TR>
+        <TR>
+			<!-- <div class="container"> -->
+			<TD><button name="cat" type="submit" value="October" >
+				<DIV id="transform">
+				<IMG src="{% static 'months/oct.jpg' %}">
+				<div class="centered" ><h3>October</h3></div>
+				</IMG>
+				<!-- </label> -->
+				
+    			<!-- <input id="rel" onclick="myFunction('C5')" type="submit"  formaction="cat1" value="" /> -->
+				</DIV>
+				</button>
+			</TD>
+		<!-- </div> -->
+			<TD><button name="cat" type="submit" value="Nov" >
+				<DIV id="transform">
+				<IMG src="{% static 'months/nov.jpg' %}">
+				<div class="centered" ><h3>November</h3></div>
+				</IMG>
+				<!-- </label> -->
+    			<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+    			</DIV>
+			</TD></button>
+			<TD><button name="cat" type="submit" value="Dec" >
+				<DIV id="transform">
+				<IMG src="{%static 'months/dec.jpeg' %}">
+				<div class="centered" ><h3>December</h3></div>
+				</IMG>
+				<!-- </label> -->
+    			<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+    			</DIV></button>
+			</TD>
+			<TD><button name="cat" type="submit" value="January" >
+				<DIV id="transform">
+				<IMG src="{%static 'months/jan.jpg' %}">
+				<div class="centered" ><h3>January</h3></div>
+				</IMG>
+				<!-- </label> -->
+    			<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+    			</DIV>			
+			</TD></button>
+        </TR>
+        <TR>
+			<!-- <div class="container"> -->
+			<TD><button name="cat" type="submit" value="February" >
+				<DIV id="transform">
+				<IMG src="{% static 'months/feb.jpg' %}">
+				<div class="centered" ><h3>February</h3></div>
+				</IMG>
+				<!-- </label> -->
+				
+    			<!-- <input id="rel" onclick="myFunction('C5')" type="submit"  formaction="cat1" value="" /> -->
+				</DIV>
+				</button>
+			</TD>
+		<!-- </div> -->
+			<TD><button name="cat" type="submit" value="March" >
+				<DIV id="transform">
+				<IMG src="{% static 'months/mar.jpg' %}">
+				<div class="centered" ><h3>March</h3></div>
+				</IMG>
+				<!-- </label> -->
+    			<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+    			</DIV>
+			</TD></button>
+			<TD><button name="cat" type="submit" value="April" >
+				<DIV id="transform">
+				<IMG src="{%static 'months/apr.jpg' %}">
+				<div class="centered" ><h3>April</h3></div>
+				</IMG>
+				<!-- </label> -->
+    			<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+    			</DIV></button>
+			</TD>
+			<TD><button name="cat" type="submit" value="May" >
+				<DIV id="transform">
+				<IMG src="{%static 'months/may.jpg' %}">
+				<div class="centered" ><h3>May</h3></div>
+				</IMG>
+				<!-- </label> -->
+    			<!-- <input id="file-input" type="submit" name="c5" onclick="myFunction('C5')" value="" /> -->
+    			</DIV>			
+			</TD></button>
+		</TR></FORM>
+	</TABLE></DIV>
+
+	<!-- <DIV id="bottomframe"><P align="center"> Tourism Recommendation System</P></DIV> -->
+</BODY>
+
+</HTML>
+	
+
+{% endblock %}
+	

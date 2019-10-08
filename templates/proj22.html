@@ -1,0 +1,193 @@
+{% block content %}
+{% load static %} 
+<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+	<TITLE>TRS</TITLE>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<LINK rel="stylesheet" href="{% static 'csss/style.css' %}" />
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+		<!-- <script type="text/javascipt">
+			$(document).on('submit','#myform1',function(e){
+				e.preventDefault();
+				document.write("in ajax");
+				alert("iin ajax"); 
+				$.ajax({
+					type :"POST",
+					url :"/fav/ple/",
+					data:{
+						textblock:$('#textahe').val()
+						console.log(e)
+						console.log(this.textblock);
+						//csrfmiddlewaretoken:$('input[textblock=csrfmiddlewaretoken]').val()
+					},
+					success:function(data){
+						alert(data);
+						alert("added to favourites");
+						}
+					});
+			
+			});
+		
+		</script> -->
+
+	<script type="text/javascript">
+		var i=0;
+		var array;
+		var results = new String("{{mylist}}");
+		var array1=[];
+		var array2=[];
+		var array3=[]
+		var list1 =("{{beach}}");
+		var list2 = ("{{ town}}");
+		var maxlen;
+		var k=0;
+		function bhaau(){
+			results = results.replace(/]/gi, "");
+			results=results.replace(/\[/g, '');
+			results = results.replace('[',"");
+			results=results.replace(/\'/g, '');
+			
+			//results=results.replace(/("|')/g, "");
+			//results=results.replace(/\"'/g, "");
+			//results=results.replace.replace(/\"\'/g, "");
+			//results=results.replace(/\'/g, "");
+			//results=results.replace(/["']/g, "");
+			//document.write(results);
+			
+			
+			array = results.split(",");
+			maxlen=array.length;
+			for(j=0;j<maxlen;j++)	
+			{
+				if(j%2==0)
+				{
+					array1.push(array[j]);
+				}
+				else{
+					array2.push(array[j]);
+				}
+			}
+			maxlen=array1.length;	
+			showRes();
+			//document.getElementById('slide1').innerHTML = "<h1>"+ stt +"</h1>";
+			//document.writeln(array[8]+array[9]);
+			//document.writeln(res[9]);
+			//document.write(results);
+		}
+		function myPrev(){
+			if(k<=0)
+				k=0;
+			else
+				k--;
+			showRes();
+		}
+		function myNext(){
+			if(k>=maxlen-1)	
+				k=maxlen-1;
+			else
+				k++;
+			showRes();
+		}
+		function showRes(){
+			document.getElementById('slide1').innerHTML = "<h3>**Destination**</h3><BR/><h2>"+ array1[k] +"</h2><BR/><h3>**Town Of Destination**</h3><h2>"+array2[k]+"</h2></h3><BR/>";
+			
+		}
+
+		function loadDoc() {
+			var xhttp = new XMLHttpRequest();
+			var dest = (array1[k]);
+			var town = (array2[k]);
+
+			/*for (var m = 0; m < dest.length; m++) {
+				alert(dest.charAt(m));
+			  }
+			*/
+
+			var y= dest.replace("&#39;","");
+			var z= town.replace("&#39;","");
+			y= dest.replace(/&#39;/g, '');
+			z= town.replace(/&#39;/g, '');
+			//dest = "asha";
+			//var y = dest.replace(/'/g, '');
+			//dest = dest.replace(/\'/gi,'');
+			/*
+			dest =dest.replace(/\'/g, "");
+			dest = dest.replace(/\"/g, "");
+			dest = dest.replace(/["']/g, "");   
+			document.write(y);
+			*/
+			xhttp.open("GET", "/setdata?myDest="+y+"&myTown="+z, true);
+			xhttp.send();
+			/*
+			xhttp.onreadystatechange = function() {
+			  if (this.readyState == 4 && this.status == 200) {
+				//document.getElementById("demo").innerHTML =
+				this.responseText;
+			  }
+			};*/
+		  }
+	</script>
+	<style>
+			body{
+				background-image: url("{% static 'photo/inback1.jpg' %}");
+				background-size: cover;
+				height: 100%;
+			   } 
+		</style>
+</HEAD>
+<BODY onload="bhaau()"> 
+	<DIV id="topframe">
+		<H1 style="text-align:left; font-size: 30pt;font-family: Matura MT Script Capitals; color:white; top:0px">TraveLogy</H1></DIV>
+		<DIV align="right">
+				{% if user.is_authenticated %}
+				<a>Hello, {{user.first_name}}</a>
+				<a href="log/logout" >LOGOUT</a>
+				{% else %}
+				<a 	href="log/register" >LOGIN</a>
+				{% endif %}<a href="/homebut" style="position: right">HOME</a>
+		<a href="/dashbut" >DASHBOARD</a><a href="/abobut" >ABOUT</a>
+		</DIV>
+			
+    <DIV id="main" align="center" style="background:transparent; color:black">
+				
+		<!--
+		 {% for i in mylist %}
+			 {{i.0}} --
+			 {{i.1}} 
+			 <button type="submit" onclick="bhaau()"> Ho baba Kahitri</button><BR/>
+		 {% endfor %}	 
+		--> <DIV style="margin:8%;">
+		<!-- </DIV>" margin-left:500px; margin-right:500px;"> -->
+		 
+		 <DIV id="slide1"></DIV>
+		 <BR><BR>
+	
+			
+			
+		<BUTTON onclick="myPrev()" type="Submit" style="border:4px groove; border-radius:1cm ;background:transparent ;width:5cm; height:2cm"><h2 style="font-size:16pt;">Previous</h2></BUTTON>
+		<BUTTON onclick="myNext()" type="Submit" style="border:4px groove; border-radius:1cm ;background:transparent;width:5cm; height:2cm"><h2 style="font-size:16pt;">NEXT</h2></BUTTON>
+		<BR><BR>
+			{% if user.is_authenticated %}
+			<BUTTON onclick="loadDoc()" type="submit"  style="border:4px groove; border-radius:1.5cm ;background:transparent ;width:2.5cm; height:2cm"><h2 style="font-size:16pt;">LIKE!</h2></BUTTON><!-- <form  id="myform1" method="POST" action="postfav"> -->
+			{% endif %}
+				<!-- {% csrf_token %} -->
+			<!-- <input type="text" id="textahe" name="textblock" value="textblock"/> -->
+			<!-- <button type="button" onclick="subForm()">subform</button> -->
+		<!-- </form>
+		 -->
+	</DIV>
+	</DIV>
+	<!-- <DIV id="bottomframe"><P align="center"> Tourism Recommendation System</P></DIV> -->
+</BODY>
+
+</HTML>
+	
+
+{% endblock %}
+	
+
+<!-- Logic sapadla ahe 2 array traverse karayach fkt neet ghayach ekada pointer pudhe gela ki parat yet nai tyacha -->
